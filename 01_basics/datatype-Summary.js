@@ -38,3 +38,9 @@ console.log("first function");
 }
 
 console.log(typeof myFunction);
+
+
+//*************  MEMORY STRUCTURE IN JAVASCRIPT ***********
+// STACK memory used in PRIMITIVE DATATYPE- give the copy
+// HEAP memory used in NON-PRIMITIVE/RERFERENCE TYPE - give the reference 
+let myYoutubeName = "rishabhyoutube"
