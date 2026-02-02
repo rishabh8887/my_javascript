@@ -14,7 +14,7 @@ const dcHeros = ["Superman","flash","batman"]
 const allheros = marvelHeros.concat(dcHeros);
 console.log(allheros);
 
-// ...(dot dot dot) it is the spread operator 
+// ...(dot dot dot) it is the spread operator used to merge two arrays 
 const allNewHeros = [...marvelHeros,...dcHeros]
 console.log(allNewHeros);
 
