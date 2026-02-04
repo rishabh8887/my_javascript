@@ -1,0 +1,20 @@
+// while loop
+let index = 0
+while (index<=10) {
+    //console.log(`rishabh ${index}`);
+    index++;
+}
+
+let myArr = ['flash','batman','superman']
+
+let arr = 0
+while(arr<myArr.length){
+    //console.log(`superheros are ${myArr[arr]}`);
+    arr++;
+}
+
+let score = 1
+do{
+    console.log(`score is ${score}`);
+    score++
+}while( score<=10);
