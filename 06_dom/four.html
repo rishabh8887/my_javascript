@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai Aur Code</title>
+</head>
+<body style="background-color:#212121; color: white">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(langname){
+        const li = document.createElement('li');
+        li.innerHTML = `${langname}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("typeScript")
+
+
+// optimized way -- because we dont need to traverse the complete tree of the DOM nodel
+    function addOptiLanguage(langName){
+       const li = document.createElement('li');
+       li. appendChild(document.createTextNode(langName))
+       document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+
+    // Editing 
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "mojo" -- nnot an optimized way
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"
+    secondLang.replaceWith(newli)
+
+    //edit one more example
+    const FirstLang = document.querySelector('li:first-child')
+    FirstLang.outerHTML='<li>TyeScript</>'
+
+
+    // remove
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+</script>
+
+
+</html>
