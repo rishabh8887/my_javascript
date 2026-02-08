@@ -18,7 +18,7 @@ const myNum = [1,2,3,4,5,6,7,8,9,10]
 
 // here it will not return by its own because we put the curlybraches which starts a scope so here we need to write return manually 
 // const newNum = myNum.filter((num)=>{
-//     return num>   
+//     return num   
 // })
 // console.log(newNum);
 

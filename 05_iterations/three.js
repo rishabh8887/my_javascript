@@ -36,4 +36,4 @@ for (const [key,value] of map) {
 //  console.log(obj)   
 // }
 
-// onjects cannot be iterated by the for of loop.
+// objects cannot be iterated by the for of loop.
