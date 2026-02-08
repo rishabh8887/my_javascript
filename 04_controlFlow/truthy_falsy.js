@@ -11,14 +11,11 @@ if(userEmamil){
 }
 
 // falsy values 
-
 //false,0,-0,Bigint 0n,null,undefined,NaN,""
-
 // accept these values all are the truthy values 
 
 
 //truthy
-
 // "0",'false'," ",[],{},function(){}
 
 // ??
