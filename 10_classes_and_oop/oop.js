@@ -31,5 +31,10 @@ const userOne = new User2("rishabh",12,true)
 const userTwo = new User2("bajpai",11,false)
 console.log(userOne);
 console.log(userTwo);
+//step-1-- as new keyword is used then an empty object is created
+//step-2--  constructor function is called because of new keyword it pack all arguments 
+//step-3-- all arguments are injected inside the object
+//step-4-- lastly all are retrieved 
+
 
 
