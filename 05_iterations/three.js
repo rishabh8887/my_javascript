@@ -1,4 +1,4 @@
-// fro of 
+// for of 
 
 // these array specific loop 
 //["","","","",""] 
