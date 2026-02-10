@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+
+    
+</body>
+    <script>
+        //function init() {
+//   let name = "Mozilla"; 
+//   function displayName() {
+//     console.log(name);
+    
+//   }
+//   displayName();
+// }
+// init();
+
+
+// function outer(){
+//     let name = "rishabh"
+//     function inner(){
+//         console.log("innerfunction",name);
+        
+//     }
+//     function inner2(){
+//         console.log("inner2",name);
+        
+//     }
+//     inner()
+//     inner2()
+// }
+// outer()
+
+// console.log("too outer", name);
+
+function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc();
+
+// in closure the outer function has some inner function and outer function return the inner function(which is as a reference)
+// as the inner function returned the outer function end it and scope gone 
+// closure says that when the when inner function is returned the not only the inner function will e passed , it goes with the scope of outer functio's too if any outer function exists there
+
+
+// it only says when inner function return it always returned with the lexical scope(lexical scope difines the scope of own function as well as the scope of its parent function also inclued )
+    
+    </script>
+    <script>
+        // document.getElementById('orange').onclick = function(){
+        //     document.body.style.backgroundColor=`orange`
+        // }
+        // document.getElementById('green').onclick = function(){
+        //     document.body.style.backgroundColor=`green`
+        // }
+
+        function clickHandler(color){
+            //document.body.style.backgroundColor=`${color}`
+           return function(){
+            document.body.style.backgroundColor=`${color}`
+
+           }
+        
+        }
+        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('green').onclick = clickHandler("green")
+
+    </script>
+</html>
